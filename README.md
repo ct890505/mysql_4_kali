@@ -1,0 +1,10 @@
+bước 1:
+	bật phần mềm split file CSV, chia file thành các file nhỏ ~=200MB
+bước s 2:
+	covert file CSV đã chia nhỏ thành file SQL, chú ý dùng đúng phần  df = pd.read_csv(input_file, encoding= "ISO-8859-1",on_bad_lines='skip')
+bước 3:
+	chuyển file CSV veaof máy Kali, đăng nhập vào mysl bằng lệnh:
+	sudo mysql -u user_name -p
+	nhập mật khẩu user.
+sử dụng data cần iport bằng lệnh use data name, tiếp theo gõ lệnh  SOURCE path_to_sql_file
+liên hệ CT339 để thêm info./.
